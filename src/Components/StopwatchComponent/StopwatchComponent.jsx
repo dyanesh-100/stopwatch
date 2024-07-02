@@ -43,12 +43,14 @@ const StopwatchComponent = () => {
 
   return (
     <div className="stopwatch">
-        <h1>STOPWATCH</h1>
-      <div className="time">{formatTime(time)}</div>
-      <div className="buttons">
-        <button className='start-btn' onClick={startStopwatch}>Start</button>
-        <button className='stop-btn' onClick={stopStopwatch}>Stop</button>
-        <button className='reset-btn' onClick={resetStopwatch}>Reset</button>
+      <div className="frame">
+        <h1>Stopwatch</h1>
+        <div className="time">{formatTime(time)}</div>
+        <div className="buttons">
+          <button className="start-btn" onClick={startStopwatch}>Start</button>
+          <button className="stop-btn" onClick={stopStopwatch}>Stop</button>
+          <button className="reset-btn" onClick={resetStopwatch}>Reset</button>
+        </div>
       </div>
     </div>
   );
